@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Class Selectors */
+        .primary-heading {
+            color: green
+        }
+        /* Element Selectors */
+        body {
+            background-color: #333;
+        }
+
+        /* Multiple Selectors */
+        /* This will target BOTH the div with the id welcome and the div with the id about */
+        #welcome, #about {
+            border: 1px solid  #ccc;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Nested Selectors */
+        /* this will target the p element inside of the div with an id of welcome */
+        #welcome p {
+            font-size: 20px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate necessitatibus assumenda voluptatum atque sint nihil explicabo vel hic, cumque quisquam!</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod corporis numquam nihil magnam doloribus culpa esse quisquam explicabo vel sapiente?</p>
+    </div>
+
+</body>
+</html>
